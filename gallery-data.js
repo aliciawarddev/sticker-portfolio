@@ -1,2 +1,43 @@
 // Generated automatically. Do not edit by hand.
-window.GALLERY = [];
+window.GALLERY = [
+  {
+    "file": "headphones-required.png",
+    "title": "headphones required",
+    "date": ""
+  },
+  {
+    "file": "hidden-disability.png",
+    "title": "hidden disability",
+    "date": ""
+  },
+  {
+    "file": "no-touching.png",
+    "title": "no touching",
+    "date": ""
+  },
+  {
+    "file": "personal-space-circle.png",
+    "title": "personal space circle",
+    "date": ""
+  },
+  {
+    "file": "personal-space-square.png",
+    "title": "personal space square",
+    "date": ""
+  },
+  {
+    "file": "pump-it-up.png",
+    "title": "pump it up",
+    "date": ""
+  },
+  {
+    "file": "sandworm-plant.png",
+    "title": "sandworm plant",
+    "date": ""
+  },
+  {
+    "file": "sandworm-season.png",
+    "title": "sandworm season",
+    "date": ""
+  }
+];
