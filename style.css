@@ -1,18 +1,18 @@
 /* ---------- Settings: change colors and fonts here ---------- */
 :root {
-  /* Palette (approximated by eye from the reference screenshots) */
-  --pink: #ffd1d8;
-  --orange: #e5662a;
-  --lavender: #e8daf3;
-  --blue: #3c5a96;
-  --sky: #cdd9f0;
-  --mint: #ddebc7;
-  --green: #2b6650;
-  --cream: #fcfbf6;
+  /* Your illustration colors */
+  --terracotta: #ce564f;
+  --coral: #f88c77;
+  --cream: #f8ecca;
+
+  /* Supporting colors */
+  --teal: #2e5e5b;       /* deep teal: footer and captions */
+  --charcoal: #3b2b27;   /* warm dark brown: text */
+  --tile: #fffbf0;       /* light tile backdrop so artwork stands out */
 
   --heading-font: "Fraunces", Georgia, serif;
   --body-font: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --radius: 6px;
+  --radius: 12px;
 }
 
 /* ---------- Base ---------- */
@@ -24,14 +24,14 @@
 
 body {
   background: var(--cream);
-  color: var(--blue);
+  color: var(--charcoal);
   font-family: var(--body-font);
   line-height: 1.5;
 }
 
 /* ---------- Header ---------- */
 .site-header {
-  background: var(--pink);
+  background: var(--terracotta);
   text-align: center;
   padding: 64px 20px 52px;
 }
@@ -41,16 +41,26 @@ body {
   font-weight: 300;
   font-size: clamp(2.2rem, 6vw, 3.4rem);
   letter-spacing: -0.01em;
-  color: var(--orange);
+  color: var(--cream);
+}
+
+/* Small hand-drawn style squiggle under the title */
+.site-header h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 12px;
+  margin: 14px auto 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='12' viewBox='0 0 80 12'%3E%3Cpath d='M2 6 Q12 -2 22 6 T42 6 T62 6 T78 6' fill='none' stroke='%23f88c77' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
 }
 
 .tagline {
-  margin-top: 10px;
-  font-size: 0.75rem;
+  margin-top: 12px;
+  font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--cream);
 }
 
 /* ---------- Gallery: even grid ---------- */
@@ -70,16 +80,7 @@ main {
   position: relative;
   cursor: pointer;
   outline: none;
-  --tile: var(--pink);
 }
-
-/* Tile colors repeat in this order */
-.card:nth-child(6n + 1) { --tile: var(--pink); }
-.card:nth-child(6n + 2) { --tile: var(--lavender); }
-.card:nth-child(6n + 3) { --tile: var(--sky); }
-.card:nth-child(6n + 4) { --tile: var(--mint); }
-.card:nth-child(6n + 5) { --tile: var(--orange); }
-.card:nth-child(6n + 6) { --tile: var(--lavender); }
 
 .card img {
   display: block;
@@ -88,13 +89,15 @@ main {
   object-fit: contain;
   padding: 12%;
   background: var(--tile);
+  border: 2px solid transparent;
   border-radius: var(--radius);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover img,
 .card:focus-visible img {
   transform: translateY(-4px);
+  border-color: var(--coral);
 }
 
 .card figcaption {
@@ -104,7 +107,7 @@ main {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--teal);
 }
 
 /* "New" label for the latest drawings */
@@ -113,7 +116,7 @@ main {
   position: absolute;
   top: 14px;
   left: 14px;
-  background: var(--orange);
+  background: var(--terracotta);
   color: var(--cream);
   font-size: 0.7rem;
   font-weight: 500;
@@ -124,13 +127,13 @@ main {
 
 .empty-message {
   text-align: center;
-  color: var(--blue);
+  color: var(--teal);
   padding: 40px 0;
 }
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: var(--green);
+  background: var(--teal);
   color: var(--cream);
   text-align: center;
   padding: 28px 20px;
@@ -142,7 +145,7 @@ main {
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(252, 251, 246, 0.97);
+  background: rgba(248, 236, 202, 0.97);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,7 +166,7 @@ main {
 .lb-content img {
   max-width: 100%;
   max-height: 72vh;
-  background: var(--lavender);
+  background: var(--tile);
   border-radius: var(--radius);
   padding: 28px;
 }
@@ -177,7 +180,7 @@ main {
   font-family: var(--heading-font);
   font-weight: 300;
   font-size: 1.5rem;
-  color: var(--blue);
+  color: var(--charcoal);
 }
 
 #lb-date {
@@ -187,14 +190,14 @@ main {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--terracotta);
 }
 
 .lb-btn {
   position: absolute;
   background: none;
   border: none;
-  color: var(--orange);
+  color: var(--terracotta);
   cursor: pointer;
   line-height: 1;
   padding: 10px 14px;
@@ -202,7 +205,7 @@ main {
 }
 
 .lb-btn:hover {
-  background: var(--pink);
+  background: var(--tile);
 }
 
 .lb-close {
