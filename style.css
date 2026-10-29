@@ -1,13 +1,18 @@
 /* ---------- Settings: change colors and fonts here ---------- */
 :root {
-  --bg: #fcfbf9;
-  --surface: #f4f2ee;
-  --border: #e8e5df;
-  --text: #2b2b2b;
-  --muted: #8a8a8a;
-  --accent: #2b2b2b;
-  --radius: 14px;
-  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Palette (approximated by eye from the reference screenshots) */
+  --pink: #ffd1d8;
+  --orange: #e5662a;
+  --lavender: #e8daf3;
+  --blue: #3c5a96;
+  --sky: #cdd9f0;
+  --mint: #ddebc7;
+  --green: #2b6650;
+  --cream: #fcfbf6;
+
+  --heading-font: "Fraunces", Georgia, serif;
+  --body-font: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --radius: 6px;
 }
 
 /* ---------- Base ---------- */
@@ -18,107 +23,126 @@
 }
 
 body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font);
+  background: var(--cream);
+  color: var(--blue);
+  font-family: var(--body-font);
   line-height: 1.5;
 }
 
 /* ---------- Header ---------- */
 .site-header {
+  background: var(--pink);
   text-align: center;
-  padding: 80px 20px 48px;
+  padding: 64px 20px 52px;
 }
 
 .site-header h1 {
-  font-size: clamp(2rem, 5vw, 2.8rem);
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-family: var(--heading-font);
+  font-weight: 300;
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  letter-spacing: -0.01em;
+  color: var(--orange);
 }
 
 .tagline {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 1rem;
+  margin-top: 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
 }
 
 /* ---------- Gallery: even grid ---------- */
 main {
-  max-width: 1040px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px 60px;
+  padding: 56px 20px 72px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .card {
   position: relative;
   cursor: pointer;
   outline: none;
+  --tile: var(--pink);
 }
+
+/* Tile colors repeat in this order */
+.card:nth-child(6n + 1) { --tile: var(--pink); }
+.card:nth-child(6n + 2) { --tile: var(--lavender); }
+.card:nth-child(6n + 3) { --tile: var(--sky); }
+.card:nth-child(6n + 4) { --tile: var(--mint); }
+.card:nth-child(6n + 5) { --tile: var(--orange); }
+.card:nth-child(6n + 6) { --tile: var(--lavender); }
 
 .card img {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
-  padding: 18px;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  padding: 12%;
+  background: var(--tile);
   border-radius: var(--radius);
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .card:hover img,
 .card:focus-visible img {
-  transform: translateY(-3px);
-  border-color: #cfcac1;
+  transform: translateY(-4px);
 }
 
 .card figcaption {
-  margin-top: 8px;
+  margin-top: 10px;
   text-align: center;
-  font-size: 0.8rem;
-  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
 }
 
 /* "New" label for the latest drawings */
 .card.is-new::after {
-  content: "New";
+  content: "new";
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background: var(--accent);
-  color: #ffffff;
+  top: 14px;
+  left: 14px;
+  background: var(--orange);
+  color: var(--cream);
   font-size: 0.7rem;
-  letter-spacing: 0.04em;
-  padding: 3px 9px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 3px 12px;
   border-radius: 999px;
 }
 
 .empty-message {
   text-align: center;
-  color: var(--muted);
+  color: var(--blue);
   padding: 40px 0;
 }
 
 /* ---------- Footer ---------- */
 .site-footer {
+  background: var(--green);
+  color: var(--cream);
   text-align: center;
-  padding: 24px 20px 48px;
-  color: var(--muted);
-  font-size: 0.85rem;
+  padding: 28px 20px;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
 }
 
 /* ---------- Viewer ---------- */
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(252, 251, 249, 0.96);
+  background: rgba(252, 251, 246, 0.97);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,11 +162,10 @@ main {
 
 .lb-content img {
   max-width: 100%;
-  max-height: 74vh;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  max-height: 72vh;
+  background: var(--lavender);
   border-radius: var(--radius);
-  padding: 24px;
+  padding: 28px;
 }
 
 .lb-content figcaption {
@@ -151,21 +174,27 @@ main {
 
 #lb-title {
   display: block;
-  font-size: 1.1rem;
+  font-family: var(--heading-font);
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: var(--blue);
 }
 
 #lb-date {
   display: block;
   margin-top: 2px;
-  font-size: 0.85rem;
-  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange);
 }
 
 .lb-btn {
   position: absolute;
   background: none;
   border: none;
-  color: var(--text);
+  color: var(--orange);
   cursor: pointer;
   line-height: 1;
   padding: 10px 14px;
@@ -173,7 +202,7 @@ main {
 }
 
 .lb-btn:hover {
-  background: var(--surface);
+  background: var(--pink);
 }
 
 .lb-close {
@@ -192,19 +221,25 @@ main {
 .lb-prev { left: 8px; }
 .lb-next { right: 8px; }
 
-/* ---------- Small screens ---------- */
-@media (max-width: 560px) {
-  .site-header {
-    padding: 52px 20px 32px;
-  }
-
+/* ---------- Tablets and phones ---------- */
+@media (max-width: 800px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    padding: 44px 20px 36px;
+  }
+
+  main {
+    padding: 36px 16px 52px;
   }
 
   .card img {
-    padding: 12px;
+    padding: 10%;
   }
 
   .lightbox {
