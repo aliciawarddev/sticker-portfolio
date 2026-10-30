@@ -11,18 +11,18 @@ window.GALLERY = [
     "date": ""
   },
   {
+    "file": "late-diagnosed-still-growing.png",
+    "title": "late diagnosed still growing",
+    "date": ""
+  },
+  {
     "file": "no-touching.png",
     "title": "no touching",
     "date": ""
   },
   {
-    "file": "personal-space-circle.png",
-    "title": "personal space circle",
-    "date": ""
-  },
-  {
-    "file": "personal-space-square.png",
-    "title": "personal space square",
+    "file": "personal-space-rectangle.png",
+    "title": "personal space rectangle",
     "date": ""
   },
   {
