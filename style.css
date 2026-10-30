@@ -56,9 +56,10 @@ body {
 
 .tagline {
   margin-top: 12px;
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--cream);
 }
 
@@ -102,9 +103,10 @@ main {
 .card figcaption {
   margin-top: 12px;
   text-align: center;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--teal);
 }
 
@@ -127,6 +129,47 @@ main {
   text-align: center;
   color: var(--teal);
   padding: 40px 0;
+}
+
+/* ---------- Theme filters ---------- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.filter-btn {
+  font-family: var(--body-font);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--teal);
+  background: var(--tile);
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 7px 18px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--coral);
+}
+
+.filter-btn:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+.filter-btn.active {
+  background: var(--terracotta);
+  color: var(--cream);
+}
+
+.card[hidden] {
+  display: none;
 }
 
 /* ---------- Footer ---------- */
@@ -184,9 +227,10 @@ main {
 #lb-date {
   display: block;
   margin-top: 4px;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--terracotta);
 }
 
