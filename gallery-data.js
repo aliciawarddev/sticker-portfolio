@@ -17,8 +17,16 @@ window.GALLERY = [
     ]
   },
   {
-    "file": "late-diagnosed-still-growing__asd.png",
-    "title": "late diagnosed still growing",
+    "file": "late-diagnosed-still-growing-1__asd.png",
+    "title": "late diagnosed still growing 1",
+    "date": "",
+    "tags": [
+      "asd"
+    ]
+  },
+  {
+    "file": "late-diagnosed-still-growing-2__asd.png",
+    "title": "late diagnosed still growing 2",
     "date": "",
     "tags": [
       "asd"
