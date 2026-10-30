@@ -1,43 +1,67 @@
 // Generated automatically. Do not edit by hand.
 window.GALLERY = [
   {
-    "file": "headphones-required.png",
+    "file": "headphones-required__asd.png",
     "title": "headphones required",
-    "date": ""
+    "date": "",
+    "tags": [
+      "asd"
+    ]
   },
   {
-    "file": "hidden-disability.png",
+    "file": "hidden-disability__asd.png",
     "title": "hidden disability",
-    "date": ""
+    "date": "",
+    "tags": [
+      "asd"
+    ]
   },
   {
-    "file": "late-diagnosed-still-growing.png",
+    "file": "late-diagnosed-still-growing__asd.png",
     "title": "late diagnosed still growing",
-    "date": ""
+    "date": "",
+    "tags": [
+      "asd"
+    ]
   },
   {
-    "file": "no-touching.png",
+    "file": "no-touching__asd.png",
     "title": "no touching",
-    "date": ""
+    "date": "",
+    "tags": [
+      "asd"
+    ]
   },
   {
-    "file": "personal-space-rectangle.png",
+    "file": "personal-space-rectangle__asd.png",
     "title": "personal space rectangle",
-    "date": ""
+    "date": "",
+    "tags": [
+      "asd"
+    ]
   },
   {
-    "file": "pump-it-up.png",
+    "file": "pump-it-up__seasonal.png",
     "title": "pump it up",
-    "date": ""
+    "date": "",
+    "tags": [
+      "seasonal"
+    ]
   },
   {
-    "file": "sandworm-plant.png",
+    "file": "sandworm-plant__seasonal.png",
     "title": "sandworm plant",
-    "date": ""
+    "date": "",
+    "tags": [
+      "seasonal"
+    ]
   },
   {
-    "file": "sandworm-season.png",
+    "file": "sandworm-season__seasonal.png",
     "title": "sandworm season",
-    "date": ""
+    "date": "",
+    "tags": [
+      "seasonal"
+    ]
   }
 ];
