@@ -33,6 +33,14 @@ window.GALLERY = [
     ]
   },
   {
+    "file": "mistletoe__seasonal.png",
+    "title": "mistletoe",
+    "date": "",
+    "tags": [
+      "seasonal"
+    ]
+  },
+  {
     "file": "no-touching__asd.png",
     "title": "no touching",
     "date": "",
@@ -49,8 +57,32 @@ window.GALLERY = [
     ]
   },
   {
+    "file": "poinsettia__seasonal.png",
+    "title": "poinsettia",
+    "date": "",
+    "tags": [
+      "seasonal"
+    ]
+  },
+  {
+    "file": "present__seasonal.png",
+    "title": "present",
+    "date": "",
+    "tags": [
+      "seasonal"
+    ]
+  },
+  {
     "file": "pump-it-up__seasonal.png",
     "title": "pump it up",
+    "date": "",
+    "tags": [
+      "seasonal"
+    ]
+  },
+  {
+    "file": "round_ornament__seasonal.png",
+    "title": "round ornament",
     "date": "",
     "tags": [
       "seasonal"
@@ -67,6 +99,22 @@ window.GALLERY = [
   {
     "file": "sandworm-season__seasonal.png",
     "title": "sandworm season",
+    "date": "",
+    "tags": [
+      "seasonal"
+    ]
+  },
+  {
+    "file": "small_star__seasonal.png",
+    "title": "small star",
+    "date": "",
+    "tags": [
+      "seasonal"
+    ]
+  },
+  {
+    "file": "star_ornament__seasonal.png",
+    "title": "star ornament",
     "date": "",
     "tags": [
       "seasonal"
