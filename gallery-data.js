@@ -57,6 +57,14 @@ window.GALLERY = [
     ]
   },
   {
+    "file": "personal_space_round__asd.png",
+    "title": "personal space round",
+    "date": "",
+    "tags": [
+      "asd"
+    ]
+  },
+  {
     "file": "poinsettia__seasonal.png",
     "title": "poinsettia",
     "date": "",
