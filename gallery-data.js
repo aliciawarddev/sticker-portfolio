@@ -9,8 +9,40 @@ window.GALLERY = [
     ]
   },
   {
+    "file": "headphones_required_2__asd.png",
+    "title": "headphones required 2",
+    "date": "",
+    "tags": [
+      "asd"
+    ]
+  },
+  {
     "file": "hidden-disability__asd.png",
     "title": "hidden disability",
+    "date": "",
+    "tags": [
+      "asd"
+    ]
+  },
+  {
+    "file": "hidden_disability_2__asd.png",
+    "title": "hidden disability 2",
+    "date": "",
+    "tags": [
+      "asd"
+    ]
+  },
+  {
+    "file": "late_diagnosed_2__asd.png",
+    "title": "late diagnosed 2",
+    "date": "",
+    "tags": [
+      "asd"
+    ]
+  },
+  {
+    "file": "late_diagnosed_3__asd.png",
+    "title": "late diagnosed 3",
     "date": "",
     "tags": [
       "asd"
@@ -49,6 +81,14 @@ window.GALLERY = [
     ]
   },
   {
+    "file": "no_touching_2__asd.png",
+    "title": "no touching 2",
+    "date": "",
+    "tags": [
+      "asd"
+    ]
+  },
+  {
     "file": "personal-space-rectangle__asd.png",
     "title": "personal space rectangle",
     "date": "",
@@ -57,8 +97,24 @@ window.GALLERY = [
     ]
   },
   {
+    "file": "personal_space_required_2__asd.png",
+    "title": "personal space required 2",
+    "date": "",
+    "tags": [
+      "asd"
+    ]
+  },
+  {
     "file": "personal_space_round__asd.png",
     "title": "personal space round",
+    "date": "",
+    "tags": [
+      "asd"
+    ]
+  },
+  {
+    "file": "personal_space_round_2__asd.png",
+    "title": "personal space round 2",
     "date": "",
     "tags": [
       "asd"
